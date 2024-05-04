@@ -12,7 +12,7 @@ public class Tuesday : IGetEventsFor
             2 => [new Event(date, defaultStartTime, "Siren Call", "Maximus")],
             3 => [new Event(date, defaultStartTime, "Lucid Dreams", "Trellis")],
             4 => [new Event(date, defaultStartTime, "Mixpub Presents", "Joe Da Vinci")],
-            _ => Enumerable.Empty<Event>()
+            _ => [new Event(date, defaultStartTime, "", "")]
         };
     }
 }

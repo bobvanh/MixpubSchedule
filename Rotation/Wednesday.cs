@@ -11,7 +11,7 @@ public class Wednesday : IGetEventsFor
             1 => [new Event(date, defaultStartTime, "Erik Bruce sessions", "THE Erik Bruce")],
             3 => [new Event(date, defaultStartTime, "Ignition", "T.B.A.")],
             4 => [new Event(date, defaultStartTime, "Mixpub Presents", "Jason Brauer")],
-            _ => Enumerable.Empty<Event>()
+            _ => [new Event(date, defaultStartTime, "", "")]
         };
     }
 }
